@@ -1,0 +1,13 @@
+.first-page-container {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: $primary-color;
+    color: $text-color;
+
+    .first-page-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

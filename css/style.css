@@ -1,6 +1,41 @@
+header {
+  background-color: #91a8ba;
+}
+
+.first-page-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #91a8ba;
+  color: #cf3212;
+}
+.first-page-container .first-page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  margin: -60px 0 0 -60px;
+  -webkit-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #000;
 }
