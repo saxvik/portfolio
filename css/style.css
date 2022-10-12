@@ -5,24 +5,36 @@ header {
 .first-page-container {
   width: 100vw;
   height: 100vh;
-  background-color: #91a8ba;
+  margin: 0%;
   color: #cf3212;
 }
 .first-page-container .first-page-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+}
+.first-page-container .first-page-content .logo-container {
+  padding-top: 25%;
+  padding-bottom: 4rem;
+}
+.first-page-container .first-page-content .background-img {
+  width: 390px;
+  justify-content: baseline;
+  /*padding-top: 5rem;*/
 }
 
 .logo-img {
-  position: absolute;
+  position: relative;
+  overflow: hidden;
   top: 50%;
   left: 50%;
   width: 120px;
   height: 120px;
   margin: -60px 0 0 -60px;
-  -webkit-animation: spin 4s linear infinite;
-  animation: spin 4s linear infinite;
+  -webkit-animation: spin 6s linear infinite;
+  animation: spin 6s linear infinite;
 }
 @-webkit-keyframes spin {
   100% {
@@ -38,4 +50,5 @@ header {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: #91a8ba;
 }
