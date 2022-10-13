@@ -1,0 +1,30 @@
+.about-container {
+
+    width: 100%;
+    height: 590px;
+    border-radius: 5px;
+    border: 5px solid $text-color;
+    padding: 2rem;
+
+    .about-content {
+
+        color: $text-color;
+
+        h2 {
+            font-family: kepler-std, serif;
+            font-weight: 700;
+            font-style: normal;
+            text-align: center;
+            padding-top: 1rem;
+
+        }
+
+        p {
+            font-family: ocr-b-std;
+            line-height: 1.5;
+            padding-top: 2rem;
+
+        }
+
+    }
+}

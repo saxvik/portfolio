@@ -1,3 +1,25 @@
-header {
-    background-color: $primary-color;
+.header-container {
+
+    width: 100vw;
+    height: 100vh;
+    color: $text-color;
+
+
+
+    .header-content {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+
+
+        .logo-container {
+
+            padding-bottom: 4rem;
+        }
+
+    }
 }
