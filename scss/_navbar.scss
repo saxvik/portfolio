@@ -11,6 +11,7 @@
     background-color: $primary-color;
 
     padding: 1.5rem;
+    border-bottom: 5px solid $text-color;
 
 
     ul {
@@ -28,6 +29,7 @@
             font-size: 1.5em;
             color: $text-color;
             padding: 1rem;
+
 
             &:hover {
                 color: black;

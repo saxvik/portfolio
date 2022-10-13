@@ -1,0 +1,44 @@
+.footer-container {
+
+    min-height: 30vh;
+    border-top: 5px solid $text-color;
+
+    .footer-content {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem;
+        color: $text-color;
+
+        h2 {
+            font-family: ocr-b-std;
+            text-transform: uppercase;
+            text-align: center;
+
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                padding: 1rem;
+
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: ocr-b-std;
+                    color: $text-color;
+
+                    &:hover {
+                        color: black;
+                        /*ÄNDRA*/
+                    }
+
+                }
+            }
+        }
+    }
+
+
+}
