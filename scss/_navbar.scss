@@ -5,23 +5,24 @@
     align-items: center;
     position: fixed;
     z-index: 1;
-
-
     width: 100vw;
 
     color: $text-color;
     background-color: $primary-color;
 
-    padding: 1.5rem;
+    padding: 2rem;
     border-bottom: 5px solid $text-color;
 
 
     ul {
 
+        width: 100vw;
+
         list-style: none;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        /*FIXA DETTA DET ÄR SKUMT*/
 
 
         a {
@@ -30,7 +31,7 @@
             font-family: ocr-b-std;
             font-size: 1.5em;
             color: $text-color;
-            padding: 1rem;
+            /*padding: 1.5rem;*/
 
 
             &:hover {
@@ -40,4 +41,5 @@
 
         }
     }
+
 }
