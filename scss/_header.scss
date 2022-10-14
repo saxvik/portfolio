@@ -21,5 +21,22 @@
             padding-bottom: 4rem;
         }
 
+        h1 {
+            font-family: kepler-std, serif;
+            font-weight: 700;
+            padding-bottom: 2rem;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: $text-color;
+
+            &:hover {
+                color: black;
+            }
+
+        }
+
     }
 }

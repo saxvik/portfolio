@@ -3,8 +3,9 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  position: fixed;
   align-items: center;
+  position: fixed;
+  z-index: 1;
   width: 100vw;
   color: #cf3212;
   background-color: #e7f3fc;
@@ -27,7 +28,6 @@
 }
 .navbar-container ul a:hover {
   color: black;
-  /*ÄNDRA*/
 }
 
 .header-container {
@@ -44,6 +44,18 @@
 }
 .header-container .header-content .logo-container {
   padding-bottom: 4rem;
+}
+.header-container .header-content h1 {
+  font-family: kepler-std, serif;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+.header-container .header-content a {
+  text-decoration: none;
+  color: #cf3212;
+}
+.header-container .header-content a:hover {
+  color: black;
 }
 
 .logo-img {
@@ -76,6 +88,7 @@
   padding: 2rem;
   border-radius: 25px;
   margin-bottom: 1rem;
+  /*box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);*/
 }
 .about-container .about-content {
   display: flex;
@@ -101,13 +114,21 @@
 }
 
 .work-container {
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: auto;
   padding: 2rem;
   border: 5px solid #cf3212;
   color: #cf3212;
   border-radius: 25px;
   margin-bottom: 1rem;
+  /* Add padding BETWEEN each column (if you want) */
+  /* Create four equal columns that floats next to each other */
+  /* Clear floats after rows */
+  /* Content */
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 }
 .work-container h2 {
   font-family: kepler-std, serif;
@@ -115,6 +136,43 @@
   font-style: normal;
   text-align: center;
   padding-top: 1rem;
+}
+.work-container .row {
+  margin: 8px -16px;
+}
+.work-container .row,
+.work-container .row > .column {
+  padding: 8px;
+}
+.work-container .column {
+  float: left;
+  width: 25%;
+}
+.work-container .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.work-container .content {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid #cf3212;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, 0.2);
+}
+.work-container .content h3 {
+  font-family: ocr-b-std;
+  text-align: center;
+  background-color: white;
+}
+@media screen and (max-width: 900px) {
+  .work-container .column {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .work-container .column {
+    width: 100%;
+  }
 }
 
 .footer-container {
