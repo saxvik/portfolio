@@ -22,7 +22,6 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        /*FIXA DETTA DET ÄR SKUMT*/
 
 
         a {
@@ -31,14 +30,20 @@
             font-family: ocr-b-std;
             font-size: 1.5em;
             color: $text-color;
-            /*padding: 1.5rem;*/
+            padding: 0.3rem;
 
 
             &:hover {
                 color: black;
-
             }
 
+        }
+
+        @media screen and (min-width: 800px) {
+            a {
+                padding: 2rem;
+                padding-bottom: 0%;
+            }
         }
     }
 

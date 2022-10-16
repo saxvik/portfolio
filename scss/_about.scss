@@ -6,7 +6,6 @@
     padding: 2rem;
     border-radius: 25px;
     margin-bottom: 1rem;
-    /*box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);*/
 
 
     .about-content {
@@ -40,4 +39,20 @@
         }
 
     }
+
+    @media screen and (min-width: 880px) {
+
+        width: 880px;
+
+    }
+}
+
+@media screen and (min-width: 880px) {
+
+    .about-container-container {
+
+        display: flex;
+        justify-content: center;
+    }
+
 }
